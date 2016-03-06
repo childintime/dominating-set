@@ -1,5 +1,4 @@
 #!/bin/bash
-
 if [ $# -ne 2 ]
   then
     echo "Need 2 arg: max-value number-of-values"
