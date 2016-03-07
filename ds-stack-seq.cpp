@@ -161,7 +161,7 @@ void dominating_set() {
 				}
 				else {
 					// jinak je mnozina stejne velka a reseni prepisu jenom v pripade, ze ma lepsi vahu
-					if(ds.weight > solution.weight) {
+					if(ds.weight < solution.weight) {
 						// printf(", je nejlepsi\n");
 						solution = ds;			
 					}
@@ -238,7 +238,7 @@ void print_ds(Dominating_set dominating_set) {
 	printf("velikost %lu\n", dominating_set.set.size());
 	printf("vaha %d\n", dominating_set.weight
 	);
-	printf("offset: %d\n", dominating_set.offset);
+	//printf("offset: %d\n", dominating_set.offset);
 	printf("vrcholy: ");
 	std::set<int>::iterator it;
 	for (it = dominating_set.set.begin(); it != dominating_set.set.end(); ++it) {
